@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "login_title" | trans }}{% endblock %}
+
+{% block main %}
+    {% if error %}
+        <div class="alert alert-danger w-50 ml-auto mr-auto mt-5" role="alert">{{ error.messageKey }}</div>
+    {% endif %}
+
+    {% for message in app.flashes ("success") %}
+        <div class="alert alert-success w-50 ml-auto mr-auto mt-5" role="alert">{{ message }}</div>
+    {% endfor %}
+
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "login_h1" | trans }}</h1>
+
+    <div class="w-50 mr-auto ml-auto pt-3">
+        <form method="post" novalidate>
+            <div class="mb-4">
+                <label for="inputEmail">{{ "login_label_email" | trans }}</label>
+                <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autofocus/>
+            </div>
+
+            <div class="mb-4">
+                <label for="inputPassword">{{ "login_label_password" | trans }}</label>
+                <input type="password" name="password" id="inputPassword" class="form-control"/>
+            </div>
+
+            <div class="mb-4">
+                <input type="checkbox" name="_remember_me" id="remember_me" checked/>
+                <label for="remember_me">{{ "login_label_remember_me" | trans }}</label>
+            </div>
+
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token ('authenticate') }}"/>
+
+            <div class="w-25 mr-auto ml-auto mb-5">
+                <button class="btn btn-lg btn-primary w-100" type="submit">
+                    {{ "login_label_submit" | trans }}
+                </button>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ include ("_bottom_fixed_footer.html.twig") }}
+{% endblock %}

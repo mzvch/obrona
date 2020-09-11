@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="..."/>
+        <meta name="keywords" content="..."/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+
+        <title>{% block title %}{% endblock %}</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    </head>
+
+    <body>
+        <div class="container">
+            <header style="padding: 15px 0;">
+                <ul class="nav text-center justify-content-center">
+                    <li class="nav-item" style="width: 16.6%;">
+                        <a href="{{ path ("index") }}" class="nav-link">{{ "base_li_home" | trans }}</a>
+                    </li>
+
+                    <li class="nav-item" style="width: 16.6%;">
+                        <a href="{{ path ("change_language") }}" class="nav-link">{{ "base_li_change_language" | trans }}</a>
+                    </li>
+
+                    {% if not app.user %}
+                        <li class="nav-item" style="width: 16.6%;">
+                            <a href="{{ path ("security_login") }}" class="nav-link">{{ "base_li_sign_in" | trans }}</a>
+                        </li>
+
+                        <li class="nav-item" style="width: 16.6%;">
+                            <a href="{{ path ("register") }}" class="nav-link">{{ "base_li_sign_up" | trans }}</a>
+                        </li>
+                    {% else %}
+                        {% if app.user.pockets | length != 0 %}
+                            <li class="nav-item" style="width: 16.6%;">
+                                <a href="{{ path ("financial_transaction_add") }}" class="nav-link">{{ "base_li_add_operation" | trans }}</a>
+                            </li>
+                        {% endif %}
+
+                        <li class="nav-item" style="width: 16.6%;">
+                            <a href="{{ path ("pocket_add") }}" class="nav-link">{{ "base_li_add_pocket" | trans }}</a>
+                        </li>
+
+                        <li class="nav-item" style="width: 16.6%;">
+                            <a href="{{ path ("user_panel") }}" class="nav-link">{{ "base_li_my_account" | trans }}</a>
+                        </li>
+
+                        <li class="nav-item" style="width: 16.6%;">
+                            <a href="{{ path ("security_logout") }}" class="nav-link">{{ "base_li_logout" | trans }}</a>
+                        </li>
+                    {% endif %}
+                </ul>
+
+                <hr class="hr-primary"/>
+            </header>
+
+            {% block main %}{% endblock %}
+
+            {% block footer %}
+                <div class="text-center" style="padding: 20px 0;">
+                    <hr class="hr-primary"/>
+
+                    {{ "now" | date ("Y") }} &copy; {{ "base_footer" | trans }}
+                </div>
+            {% endblock %}
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </body>
+</html>

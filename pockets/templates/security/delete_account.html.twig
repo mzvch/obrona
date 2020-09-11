@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "delete_account_title" | trans }}{% endblock %}
+
+{% block main %}
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "delete_account_h1" | trans }}</h1>
+
+    <div class="mr-auto ml-auto pt-3" style="width: 12.5%;">
+        {{ form_start (form) }}
+            {{ form_row (form.submit) }}
+        {{ form_end (form) }}
+    </div>
+
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url ("user_account_settings") }}">{{ "delete_account_cancel_link" | trans }}</a>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ include ("_bottom_fixed_footer.html.twig") }}
+{% endblock %}

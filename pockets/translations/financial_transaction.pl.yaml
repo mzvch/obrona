@@ -1,0 +1,11 @@
+form.financial_transaction.label.title: Tytuł operacji
+
+form.financial_transaction.help.title: Tytuł operacji powinien zawierać maksymalnie 30 znaków.
+
+form.financial_transaction.label.pocket: Wybrany portfel
+
+form.financial_transaction.label.amount: Kwota operacji (w PLN)
+
+form.financial_transaction.help.amount: Jeśli chcesz dodać wydatek, wpisz kwotę ujemną (np. -12.89).
+
+form.financial_transaction.label.submit: Dodaj operację

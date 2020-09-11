@@ -1,0 +1,11 @@
+form.financial_transaction.label.title: Transaction title
+
+form.financial_transaction.help.title: The transaction title should contain no more than 30 characters.
+
+form.financial_transaction.label.pocket: Selected pocket
+
+form.financial_transaction.label.amount: Transaction amount (in PLN)
+
+form.financial_transaction.help.amount: If you want to add an expense, enter a negative amount (e.g. -12.89).
+
+form.financial_transaction.label.submit: Add transaction

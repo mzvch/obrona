@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "list_pocket_title" | trans }}{% endblock %}
+
+{% block main %}
+    {% for message in app.flashes ("success") %}
+        <div class="alert alert-success w-50 ml-auto mr-auto mt-5" role="alert">{{ message }}</div>
+    {% endfor %}
+
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "list_pocket_h1" | trans }}</h1>
+
+    {% if app.user.pockets | length == 0 %}
+        <p class="text-center pt-5 pb-5">{{ "list_pocket_no_pockets" | trans }}</p>
+    {% else %}
+        {% for pocket in app.user.pockets %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="w-25 text-center" style="float: left;">{{ "list_pocket_name" | trans }}: <strong>{{ pocket.name }}</strong></div>
+
+                    <div class="w-25 text-center" style="float: left;">{{ "list_pocket_ballance" | trans }}: <strong>{{ pocket.accountBalance | number_format(2, ',', ' ') ~ 'PLN' }}</strong></div>
+
+                    <div class="w-25 text-center" style="float: left;"><a href="{{ url ("pocket_edit", {"id": pocket.id}) }}">{{ "list_pocket_edit" | trans }}</a></div>
+
+                    <div class="w-25 text-center" style="float: left;"><a href="{{ url ("pocket_delete", {"id": pocket.id}) }}">{{ "list_pocket_delete" | trans }}</a></div>
+
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url ("user_panel") }}">{{ "list_pocket_return_link" | trans }}</a>
+    </div>
+{% endblock %}

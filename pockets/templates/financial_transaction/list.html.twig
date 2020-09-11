@@ -1,0 +1,147 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "list_financial_transaction_title" | trans }}{% endblock %}
+
+{% block main %}
+    {% for message in app.flashes ("success") %}
+        <div class="alert alert-success w-50 ml-auto mr-auto mt-5" role="alert">{{ message }}</div>
+    {% endfor %}
+
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "list_financial_transaction_h1" | trans }}</h1>
+
+    {% if app.user.pockets | length == 0 %}
+        <p class="text-center pt-5 pb-5">{{ "list_financial_transaction_no_pockets_message" | trans }} <a href="{{ url ("pocket_add") }}">{{ "list_financial_transaction_no_pockets_link" | trans }}</a>.</p>
+    {% else %}
+        {% if financialTransactions | length == 0 %}
+            <p class="text-center pt-5 pb-5">{{ "list_financial_transaction_no_transactions" | trans }}</p>
+        {% else %}
+            <form class="needs-validation" novalidate action="{{  path ('financial_transaction_list') }}" method="post">
+                <div class="form-row form-group">
+                    <div class="col-md-3 mb-1">
+                        <label for="validationCustom01">{{ "list_financial_transaction_filter_form_amount_from_label" | trans }}</label>
+
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="{{ "list_financial_transaction_filter_form_amount_from_placeholder" | trans }}" name="amount_from"
+                                {% if filters.amount_from is defined %} value="{{ filters.amount_from }}" {% endif %}
+                        >
+                    </div>
+
+                    <div class="col-md-3 mb-1">
+                        <label for="validationCustom02">{{ "list_financial_transaction_filter_form_amount_to_label" | trans }}</label>
+
+                        <input type="text" class="form-control" id="validationCustom01" placeholder="{{ "list_financial_transaction_filter_form_amount_to_label" | trans }}" name="amount_to"
+                                {% if filters.amount_to is defined %} value="{{ filters.amount_to }}" {% endif %}
+                        >
+                    </div>
+
+                    <div class="col-md-3 mb-1">
+                        <label for="validationCustom01">{{ "list_financial_transaction_filter_form_date_from_label" | trans }}</label>
+
+                        <input type="date" class="form-control" id="validationCustom01" placeholder="{{ "list_financial_transaction_filter_form_date_from_label" | trans }}" name="date_from"
+                                {% if filters.date_from is defined %} value="{{ filters.date_from }}" {% endif %}
+                        >
+                    </div>
+
+                    <div class="col-md-3 mb-1">
+                        <label for="validationCustom02">{{ "list_financial_transaction_filter_form_date_to_label" | trans }}</label>
+
+                        <input type="date" class="form-control" id="validationCustom01" placeholder="{{ "list_financial_transaction_filter_form_date_to_label" | trans }}" name="date_to"
+                                {% if filters.date_to is defined %} value="{{ filters.date_to }}" {% endif %}
+                        >
+                    </div>
+                </div>
+
+                <div class="form-row form-group">
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" class="custom-control-input" name="transaction_type" value="1"
+                                {% if filters.transaction_type is defined and filters.transaction_type == 1 %} checked="checked" {% endif %}
+                        >
+
+                        <label class="custom-control-label" for="customRadioInline1">{{ "list_financial_transaction_filter_form_income_label" | trans }}</label>
+                    </div>
+
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" class="custom-control-input" name="transaction_type" value="2"
+                                {% if filters.transaction_type is defined and filters.transaction_type == 2 %} checked="checked" {% endif %}
+                        >
+
+                        <label class="custom-control-label" for="customRadioInline2">{{ "list_financial_transaction_filter_form_expense_label" | trans }}</label>
+                    </div>
+
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline3" class="custom-control-input" name="transaction_type" value="3"
+                                {% if filters.transaction_type is defined and filters.transaction_type == 3 %} checked="checked" {% endif %}
+                        >
+
+                        <label class="custom-control-label" for="customRadioInline3">{{ "list_financial_transaction_filter_form_all_label" | trans }}</label>
+                    </div>
+                </div>
+
+                <div class="form-row form-group">
+                    {% for pocket in app.user.pockets %}
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck{{ pocket.id }}" name="pocket[{{ pocket.id }}]"
+                                    {% if filters.pocket[pocket.id] is defined and filters.pocket[pocket.id] == "on" %} checked="checked" {% endif %}
+                            >
+
+                            <label class="custom-control-label" for="customCheck{{ pocket.id }}">{{ pocket.name }}</label>
+                        </div>
+                    {% endfor %}
+                </div>
+
+                <div class="form-row">
+                    <button class="btn btn-primary" type="submit">{{ "list_financial_transaction_filter_form_submit" | trans }}</button>
+                </div>
+
+            </form>
+
+            <hr class="hr-primary"/>
+
+            {% for financialTransaction in financialTransactions | sort ((a, b) => b.id <=> a.id) %}
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="text-center" style="width: 17%; float: left;">
+                            ID: <strong>{{ financialTransaction.id }}</strong>
+                        </div>
+
+                        <div class="text-center" style="width: 17%; float: left;">
+                            {{ "list_financial_transaction_li_transaction_title" | trans }}: <strong>{{ financialTransaction.title }}</strong>
+                        </div>
+
+                        <div class="text-center" style="width: 17%; float: left;">
+                            {{ "list_financial_transaction_li_transaction_amount" | trans }}: <strong>{{ financialTransaction.amount | number_format(2, ',', ' ') ~ 'PLN' }}</strong>
+                        </div>
+
+                        <div class="text-center" style="width: 14%; float: left;">
+                            {{ "list_financial_transaction_li_transaction_date" | trans }}: <strong>{{ financialTransaction.transactionDate | date ("d-m-Y H:i:s") }}</strong>
+                        </div>
+
+                        <div class="text-center" style="width: 11%; float: left;">
+                            {{ "list_financial_transaction_li_pocket" | trans }}: <strong>{{ financialTransaction.pocket.name }}</strong>
+                        </div>
+
+                        <div class="text-center" style="width: 24%; float: left;">
+                            {{ "list_financial_transaction_li_pocket_balance" | trans }}: <strong>{{ financialTransaction.postTransactionBalance | number_format(2, ',', ' ') ~ 'PLN' }} </strong>
+                        </div>
+
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+            {% endfor %}
+
+            <nav aria-label="pagination-transaction">
+                <ul class="pagination pagination-sm">
+
+                    {% for i in 1..pages %}
+                        <li class="page-item {% if i == currentPage %} disabled {% endif %}">
+                            <a class="page-link" href="{{  path('financial_transaction_list') }}/{{ i }}"  {% if i == currentPage %} tabindex="-1" {% endif %}>{{ i }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </nav>
+        {% endif %}
+    {% endif %}
+
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url ("user_panel") }}">{{ "list_financial_transaction_return_link" | trans }}</a>
+    </div>
+{% endblock %}

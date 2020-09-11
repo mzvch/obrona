@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "delete_pocket_title" | trans }}{% endblock %}
+
+{% block main %}
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "delete_pocket_h1" | trans }}</h1>
+
+    <div class="mr-auto ml-auto pt-3" style="width: 11.45%;">
+        {{ form_start (form) }}
+            {{ form_row (form.submit) }}
+        {{ form_end (form) }}
+    </div>
+
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url ("pocket_list") }}">{{ "delete_pocket_cancel" | trans }}</a>
+    </div>
+{% endblock %}

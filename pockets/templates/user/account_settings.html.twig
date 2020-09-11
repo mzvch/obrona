@@ -1,0 +1,21 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "account_settings_title" | trans }}{% endblock %}
+
+{% block main %}
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "account_settings_h1" | trans }}</h1>
+
+    {% if "ROLE_ADMIN" not in app.user.roles %}
+        <div class="text-center mt-5 mb-5">
+            <a href="{{ url ("security_delete_account") }}">{{ "account_settings_delete_account_link" | trans }}</a>
+        </div>
+    {% endif %}
+
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url ("user_panel") }}">{{ "account_settings_return_link" | trans }}</a>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ include ("_bottom_fixed_footer.html.twig") }}
+{% endblock %}

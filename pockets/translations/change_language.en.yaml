@@ -1,0 +1,7 @@
+form.change_language.label.language: Language
+
+form.change_language.choice.label.polish: polish
+
+form.change_language.choice.label.english: english
+
+form.change_language.label.submit: Change language

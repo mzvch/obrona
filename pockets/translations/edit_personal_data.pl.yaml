@@ -1,0 +1,9 @@
+form.edit_personal_data.label.first_name: Imię
+
+form.edit_personal_data.help.first_name: Twoje imię powinno zawierać maksymalnie 30 znaków.
+
+form.edit_personal_data.label.last_name: Nazwisko
+
+form.edit_personal_data.help.last_name: Twoje nazwisko powinno zawierać maksymalnie 50 znaków.
+
+form.edit_personal_data.label.submit: Zmień dane

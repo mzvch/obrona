@@ -1,0 +1,25 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "edit_personal_data_title" | trans }}{% endblock %}
+
+{% block main %}
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "edit_personal_data_h1" | trans }}</h1>
+
+    <div class="w-50 mr-auto ml-auto pt-3">
+        {{ form_start (form) }}
+            {{ form_row (form.firstName) }}
+
+            {{ form_row (form.lastName) }}
+
+            {{ form_row (form.submit) }}
+        {{ form_end (form) }}
+    </div>
+
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url ("user_personal_data") }}">{{ "edit_personal_data_return_link" | trans }}</a>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ include ("_bottom_fixed_footer.html.twig") }}
+{% endblock %}

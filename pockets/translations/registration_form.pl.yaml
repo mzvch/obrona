@@ -1,0 +1,21 @@
+form.register.label.first_name: Imię
+
+form.register.help.first_name: Twoje imię powinno zawierać maksymalnie 30 znaków.
+
+form.register.label.last_name: Nazwisko
+
+form.register.help.last_name: Twoje nazwisko powinno zawierać maksymalnie 50 znaków.
+
+form.register.label.email: Adres e-mail
+
+form.register.help.email: Adres e-mail powinien zawierać maksymalnie 50 znaków.
+
+form.register.label.password: Hasło
+
+form.register.help.password: Hasło powinno mieć od 15 do 64 znaków.
+
+form.register.label.repeat_password: Powtórz hasło
+
+form.register.label.agree_terms: Akceptuję <a href="#" target="_blank">regulamin serwisu</a>
+
+form.register.label.submit: Załóż konto

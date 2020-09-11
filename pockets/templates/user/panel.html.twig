@@ -1,0 +1,35 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "panel_title" | trans }}{% endblock %}
+
+{% block main %}
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "panel_h1_welcome" | trans }}, {% if "ROLE_ADMIN" in app.user.roles %}{{ "panel_h1_administrator" | trans }}{% endif %} {{ app.user.firstName }} {{ app.user.lastName }}!</h1>
+
+    <ul class="nav flex-column text-center pt-5">
+        <li class="nav-item">
+            <a href="{{ url ("pocket_list") }}" class="nav-link">{{ "panel_li_my_pockets" | trans }}</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{{ url ("financial_transaction_list") }}" class="nav-link">{{ "panel_li_my_transactions" | trans }}</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{{ url ("user_personal_data") }}" class="nav-link">{{ "panel_li_my_data" | trans }}</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="{{ url ("user_account_settings") }}" class="nav-link">{{ "panel_li_account_settings" | trans }}</a>
+        </li>
+
+        {% if "ROLE_ADMIN" in app.user.roles %}
+            <li class="nav-item">
+                <a href="{{ url ("admin_user_list") }}" class="nav-link">{{ "panel_li_user_list" | trans }}</a>
+            </li>
+        {% endif %}
+    </ul>
+{% endblock %}
+
+{% block footer %}
+    {{ include ("_bottom_fixed_footer.html.twig") }}
+{% endblock %}

@@ -1,0 +1,7 @@
+form.change_language.label.language: Język
+
+form.change_language.choice.label.polish: polski
+
+form.change_language.choice.label.english: angielski
+
+form.change_language.label.submit: Zmień język

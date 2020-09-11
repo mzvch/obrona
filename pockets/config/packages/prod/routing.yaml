@@ -1,0 +1,4 @@
+framework:
+    router:
+        strict_requirements: null
+        default_uri: "https://wierzba.wzks.uj.edu.pl/~17_zych/wierzba/public/"

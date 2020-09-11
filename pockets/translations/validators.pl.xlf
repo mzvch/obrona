@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="pl" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="user_email_unique">
+                <source>user_email_unique</source>
+                <target>Użytkownik o podanym adresie e-mail już istnieje.</target>
+            </trans-unit>
+
+            <trans-unit id="user_first_name_not_blank">
+                <source>user_first_name_not_blank</source>
+                <target>Musisz podać swoje imię.</target>
+            </trans-unit>
+
+            <trans-unit id="user_first_name_max_length">
+                <source>user_first_name_max_length</source>
+                <target>Twoje imię może zawierać maksymalnie 30 znaków.</target>
+            </trans-unit>
+
+            <trans-unit id="user_last_name_not_blank">
+                <source>user_last_name_not_blank</source>
+                <target>Musisz podać swoje nazwisko.</target>
+            </trans-unit>
+
+            <trans-unit id="user_last_name_max_length">
+                <source>user_last_name_max_length</source>
+                <target>Twoje nazwisko może zawierać maksymalnie 50 znaków.</target>
+            </trans-unit>
+
+            <trans-unit id="user_email_not_blank">
+                <source>user_email_not_blank</source>
+                <target>Musisz podać swój adres e-mail.</target>
+            </trans-unit>
+
+            <trans-unit id="user_email_max_length">
+                <source>user_email_max_length</source>
+                <target>Twój adres e-mail może zawierać maksymalnie 50 znaków.</target>
+            </trans-unit>
+
+            <trans-unit id="user_email_format">
+                <source>user_email_format</source>
+                <target>Twój adres e-mail ma niepoprawny format.</target>
+            </trans-unit>
+
+            <trans-unit id="user_password_not_same">
+                <source>user_password_not_same</source>
+                <target>Wpisane hasła muszą być takie same.</target>
+            </trans-unit>
+
+            <trans-unit id="user_password_not_blank">
+                <source>user_password_not_blank</source>
+                <target>Musisz podać hasło do swojego konta.</target>
+            </trans-unit>
+
+            <trans-unit id="user_password_min_length">
+                <source>user_password_min_length</source>
+                <target>Twoje hasło musi zawierać co najmniej 15 znaków.</target>
+            </trans-unit>
+
+            <trans-unit id="user_password_max_length">
+                <source>user_password_max_length</source>
+                <target>Twoje hasło musi posiadać co najwyżej 64 znaki.</target>
+            </trans-unit>
+
+            <trans-unit id="user_agree_terms_is_true">
+                <source>user_agree_terms_is_true</source>
+                <target>Musisz zaakceptować regulamin naszego serwisu.</target>
+            </trans-unit>
+
+            <trans-unit id="pocket_name_not_blank">
+                <source>pocket_name_not_blank</source>
+                <target>Musisz podać nazwę portfela.</target>
+            </trans-unit>
+
+            <trans-unit id="pocket_name_max_length">
+                <source>pocket_name_max_length</source>
+                <target>Nazwa portfela może zawierać maksymalnie 30 znaków.</target>
+            </trans-unit>
+
+            <trans-unit id="pocket_account_balance_greater_than_or_equal">
+                <source>pocket_account_balance_greater_than_or_equal</source>
+                <target>Saldo portfela nie może być niższe niż 0 PLN.</target>
+            </trans-unit>
+
+            <trans-unit id="financial_transaction_title_not_blank">
+                <source>financial_transaction_title_not_blank</source>
+                <target>Musisz podać tytuł operacji.</target>
+            </trans-unit>
+
+            <trans-unit id="financial_transaction_title_max_length">
+                <source>financial_transaction_title_max_length</source>
+                <target>Tytuł operacji może zawierać maksymalnie 30 znaków.</target>
+            </trans-unit>
+
+            <trans-unit id="financial_transaction_amount_not_blank">
+                <source>financial_transaction_amount_not_blank</source>
+                <target>Musisz podać kwotę operacji.</target>
+            </trans-unit>
+
+            <trans-unit id="financial_transaction_amount_not_equal_to">
+                <source>financial_transaction_amount_not_equal_to</source>
+                <target>Kwota operacji nie może być równa 0 PLN.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_not_same">
+                <source>change_password_not_same</source>
+                <target>Wpisane hasła muszą być takie same.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_not_blank">
+                <source>change_password_not_blank</source>
+                <target>Musisz podać nowe hasło do swojego konta.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_min_length">
+                <source>change_password_min_length</source>
+                <target>Twoje hasło musi zawierać co najmniej 15 znaków.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_max_length">
+                <source>change_password_max_length</source>
+                <target>Twoje hasło musi posiadać co najwyżej 64 znaki.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

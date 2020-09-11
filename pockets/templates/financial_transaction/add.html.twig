@@ -1,0 +1,31 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "add_financial_transaction_title" | trans }}{% endblock %}
+
+{% block main %}
+    {% for message in app.flashes ("error") %}
+        <div class="alert alert-danger w-50 ml-auto mr-auto mt-5" role="alert">{{ message }}</div>
+    {% endfor %}
+
+    <h1 class="h1 text-center mt-3 mb-5 pt-1">{{ "add_financial_transaction_h1" | trans }}</h1>
+
+    <div class="w-50 mr-auto ml-auto pt-3">
+        {{ form_start (form) }}
+            {{ form_row (form.title) }}
+
+            {{ form_row (form.pocket) }}
+
+            {{ form_row (form.amount) }}
+
+            {{ form_row (form.submit) }}
+        {{ form_end (form) }}
+    </div>
+
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url ("financial_transaction_list") }}">{{ "add_financial_transaction_return_link" | trans }}</a>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ include ("_bottom_fixed_footer.html.twig") }}
+{% endblock %}

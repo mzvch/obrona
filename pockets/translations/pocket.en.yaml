@@ -1,0 +1,11 @@
+form.pocket.label.name: Pocket name
+
+form.pocket.help.name: The pocket name should be up to 30 characters long.
+
+form.pocket.label.account_balance: Pocket balance (in PLN)
+
+form.pocket.help.account_balance: The lowest possible value of the pocket balance is PLN 0.
+
+form.pocket.label.submit: Add pocket
+
+form.pocket.delete.label.submit: Delete pocket

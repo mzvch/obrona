@@ -1,0 +1,621 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="pl" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="base_li_home">
+                <source>base_li_home</source>
+                <target>Strona główna</target>
+            </trans-unit>
+
+            <trans-unit id="base_li_change_language">
+                <source>base_li_change_language</source>
+                <target>Zmień język</target>
+            </trans-unit>
+
+            <trans-unit id="base_li_sign_in">
+                <source>base_li_sign_in</source>
+                <target>Zaloguj</target>
+            </trans-unit>
+
+            <trans-unit id="base_li_sign_up">
+                <source>base_li_sign_up</source>
+                <target>Załóż konto</target>
+            </trans-unit>
+
+            <trans-unit id="base_li_add_operation">
+                <source>base_li_add_operation</source>
+                <target>Dodaj operację</target>
+            </trans-unit>
+
+            <trans-unit id="base_li_add_pocket">
+                <source>base_li_add_pocket</source>
+                <target>Dodaj portfel</target>
+            </trans-unit>
+
+            <trans-unit id="base_li_my_account">
+                <source>base_li_my_account</source>
+                <target>Moje konto</target>
+            </trans-unit>
+
+            <trans-unit id="base_li_logout">
+                <source>base_li_logout</source>
+                <target>Wyloguj</target>
+            </trans-unit>
+
+            <trans-unit id="base_footer">
+                <source>base_footer</source>
+                <target>Wszelkie prawa zastrzeżone. Autor: Magdalena Zych</target>
+            </trans-unit>
+
+            <trans-unit id="index_title">
+                <source>index_title</source>
+                <target>strona główna</target>
+            </trans-unit>
+
+            <trans-unit id="index_h1_welcome">
+                <source>index_h1_welcome</source>
+                <target>Witaj</target>
+            </trans-unit>
+
+            <trans-unit id="index_h2">
+                <source>index_h2</source>
+                <target>Pockets - aplikacja do zarządzania portfelami i transakcjami</target>
+            </trans-unit>
+
+            <trans-unit id="index_h3">
+                <source>index_h3</source>
+                <target>Praca zaliczeniowa Magdaleny Zych</target>
+            </trans-unit>
+
+            <trans-unit id="login_title">
+                <source>login_title</source>
+                <target>logowanie</target>
+            </trans-unit>
+
+            <trans-unit id="login_h1">
+                <source>login_h1</source>
+                <target>Zaloguj się</target>
+            </trans-unit>
+
+            <trans-unit id="login_label_email">
+                <source>login_label_email</source>
+                <target>Adres e-mail</target>
+            </trans-unit>
+
+            <trans-unit id="login_label_password">
+                <source>login_label_password</source>
+                <target>Hasło</target>
+            </trans-unit>
+
+            <trans-unit id="login_label_remember_me">
+                <source>login_label_remember_me</source>
+                <target>Zapamiętaj mnie</target>
+            </trans-unit>
+
+            <trans-unit id="login_label_submit">
+                <source>login_label_submit</source>
+                <target>Zaloguj</target>
+            </trans-unit>
+
+            <trans-unit id="register_title">
+                <source>register_title</source>
+                <target>rejestracja</target>
+            </trans-unit>
+
+            <trans-unit id="register_h1">
+                <source>register_h1</source>
+                <target>Zarejestruj się</target>
+            </trans-unit>
+
+            <trans-unit id="change_language_title">
+                <source>change_language_title</source>
+                <target>zmień język</target>
+            </trans-unit>
+
+            <trans-unit id="change_language_h1">
+                <source>change_language_h1</source>
+                <target>Zmień język aplikacji</target>
+            </trans-unit>
+
+            <trans-unit id="change_language_return_link">
+                <source>change_language_return_link</source>
+                <target>Powrót</target>
+            </trans-unit>
+
+            <trans-unit id="panel_title">
+                <source>panel_title</source>
+                <target>panel użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="panel_h1_welcome">
+                <source>panel_h1_welcome</source>
+                <target>Witaj</target>
+            </trans-unit>
+
+            <trans-unit id="panel_h1_administrator">
+                <source>panel_h1_administrator</source>
+                <target>administratorze</target>
+            </trans-unit>
+
+            <trans-unit id="panel_li_my_pockets">
+                <source>panel_li_my_pockets</source>
+                <target>Moje portfele</target>
+            </trans-unit>
+
+            <trans-unit id="panel_li_my_transactions">
+                <source>panel_li_my_transactions</source>
+                <target>Moje operacje</target>
+            </trans-unit>
+
+            <trans-unit id="panel_li_my_data">
+                <source>panel_li_my_data</source>
+                <target>Moje dane</target>
+            </trans-unit>
+
+            <trans-unit id="panel_li_account_settings">
+                <source>panel_li_account_settings</source>
+                <target>Ustawienia konta</target>
+            </trans-unit>
+
+            <trans-unit id="panel_li_user_list">
+                <source>panel_li_user_list</source>
+                <target>Lista użytkowników</target>
+            </trans-unit>
+
+            <trans-unit id="add_pocket_title">
+                <source>add_pocket_title</source>
+                <target>dodaj portfel</target>
+            </trans-unit>
+
+            <trans-unit id="add_pocket_h1">
+                <source>add_pocket_h1</source>
+                <target>Dodaj nowy portfel</target>
+            </trans-unit>
+
+            <trans-unit id="add_pocket_return_link">
+                <source>add_pocket_return_link</source>
+                <target>Powrót do moich portfeli</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_title">
+                <source>list_pocket_title</source>
+                <target>moje portfele</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_h1">
+                <source>list_pocket_h1</source>
+                <target>Lista Twoich portfeli</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_add_pocket_link">
+                <source>list_pocket_add_pocket_link</source>
+                <target>Dodaj nowy portfel</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_no_pockets">
+                <source>list_pocket_no_pockets</source>
+                <target>Nie masz żadnych portfeli.</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_name">
+                <source>list_pocket_name</source>
+                <target>Nazwa</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_ballance">
+                <source>list_pocket_ballance</source>
+                <target>Saldo</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_edit">
+                <source>list_pocket_edit</source>
+                <target>Edytuj</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_delete">
+                <source>list_pocket_delete</source>
+                <target>Usuń</target>
+            </trans-unit>
+
+            <trans-unit id="list_pocket_return_link">
+                <source>list_pocket_return_link</source>
+                <target>Powrót do panelu użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="edit_pocket_title">
+                <source>edit_pocket_title</source>
+                <target>edytuj portfel</target>
+            </trans-unit>
+
+            <trans-unit id="edit_pocket_h1">
+                <source>edit_pocket_h1</source>
+                <target>Edytuj portfel</target>
+            </trans-unit>
+
+            <trans-unit id="edit_pocket_return_link">
+                <source>edit_pocket_return_link</source>
+                <target>Powrót do moich portfeli</target>
+            </trans-unit>
+
+            <trans-unit id="delete_pocket_title">
+                <source>delete_pocket_title</source>
+                <target>usuń portfel</target>
+            </trans-unit>
+
+            <trans-unit id="delete_pocket_h1">
+                <source>delete_pocket_h1</source>
+                <target>Potwierdź usunięcie portfela</target>
+            </trans-unit>
+
+            <trans-unit id="delete_pocket_cancel">
+                <source>delete_pocket_cancel</source>
+                <target>Anuluj</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_title">
+                <source>list_financial_transaction_title</source>
+                <target>moje operacje</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_h1">
+                <source>list_financial_transaction_h1</source>
+                <target>Lista Twoich operacji</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_no_pockets_message">
+                <source>list_financial_transaction_no_pockets_message</source>
+                <target>Aby móc dodawać operacje, musisz najpierw</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_no_pockets_link">
+                <source>list_financial_transaction_no_pockets_link</source>
+                <target>stworzyć portfele</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_no_transactions">
+                <source>list_financial_transaction_no_transactions</source>
+                <target>Nie masz żadnych operacji.</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_amount_from_label">
+                <source>list_financial_transaction_filter_form_amount_from_label</source>
+                <target>Kwota od</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_amount_from_placeholder">
+                <source>list_financial_transaction_filter_form_amount_from_placeholder</source>
+                <target>Kwota od</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_amount_to_label">
+                <source>list_financial_transaction_filter_form_amount_to_label</source>
+                <target>Kwota do</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_amount_to_placeholder">
+                <source>list_financial_transaction_filter_form_amount_to_placeholder</source>
+                <target>Kwota do</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_date_from_label">
+                <source>list_financial_transaction_filter_form_date_from_label</source>
+                <target>Data od</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_date_from_placeholder">
+                <source>list_financial_transaction_filter_form_date_from_placeholder</source>
+                <target>Data od</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_date_to_label">
+                <source>list_financial_transaction_filter_form_date_to_label</source>
+                <target>Data do</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_date_to_placeholder">
+                <source>list_financial_transaction_filter_form_date_to_placeholder</source>
+                <target>Data do</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_income_label">
+                <source>list_financial_transaction_filter_form_income_label</source>
+                <target>Wpływy</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_expense_label">
+                <source>list_financial_transaction_filter_form_expense_label</source>
+                <target>Wydatki</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_all_label">
+                <source>list_financial_transaction_filter_form_all_label</source>
+                <target>Wszystkie operacje</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_filter_form_submit">
+                <source>list_financial_transaction_filter_form_submit</source>
+                <target>Filtruj</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_li_transaction_title">
+                <source>list_financial_transaction_li_transaction_title</source>
+                <target>Tytuł operacji</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_li_transaction_amount">
+                <source>list_financial_transaction_li_transaction_amount</source>
+                <target>Kwota operacji</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_li_transaction_date">
+                <source>list_financial_transaction_li_transaction_date</source>
+                <target>Data operacji</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_li_pocket">
+                <source>list_financial_transaction_li_pocket</source>
+                <target>Portfel</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_li_pocket_balance">
+                <source>list_financial_transaction_li_pocket_balance</source>
+                <target>Saldo portfela po operacji</target>
+            </trans-unit>
+
+            <trans-unit id="list_financial_transaction_return_link">
+                <source>list_financial_transaction_return_link</source>
+                <target>Powrót do panelu użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="add_financial_transaction_title">
+                <source>add_financial_transaction_title</source>
+                <target>dodaj operację</target>
+            </trans-unit>
+
+            <trans-unit id="add_financial_transaction_h1">
+                <source>add_financial_transaction_h1</source>
+                <target>Dodaj nową operację</target>
+            </trans-unit>
+
+            <trans-unit id="add_financial_transaction_return_link">
+                <source>add_financial_transaction_return_link</source>
+                <target>Powrót do moich operacji</target>
+            </trans-unit>
+
+            <trans-unit id="personal_data_title">
+                <source>personal_data_title</source>
+                <target>moje dane</target>
+            </trans-unit>
+
+            <trans-unit id="personal_data_h1">
+                <source>personal_data_h1</source>
+                <target>Twoje dane osobowe</target>
+            </trans-unit>
+
+            <trans-unit id="personal_data_first_name_label">
+                <source>personal_data_first_name_label</source>
+                <target>Imię</target>
+            </trans-unit>
+
+            <trans-unit id="personal_data_last_name_label">
+                <source>personal_data_last_name_label</source>
+                <target>Nazwisko</target>
+            </trans-unit>
+
+            <trans-unit id="personal_data_email_label">
+                <source>personal_data_email_label</source>
+                <target>Adres e-mail</target>
+            </trans-unit>
+
+            <trans-unit id="personal_data_edit_data_link">
+                <source>personal_data_edit_data_link</source>
+                <target>Edytuj swoje dane</target>
+            </trans-unit>
+
+            <trans-unit id="personal_data_change_password_link">
+                <source>personal_data_change_password_link</source>
+                <target>Zmień hasło do swojego konta</target>
+            </trans-unit>
+
+            <trans-unit id="personal_data_return_link">
+                <source>personal_data_return_link</source>
+                <target>Powrót do panelu użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="edit_personal_data_title">
+                <source>edit_personal_data_title</source>
+                <target>edytuj dane osobowe</target>
+            </trans-unit>
+
+            <trans-unit id="edit_personal_data_h1">
+                <source>edit_personal_data_h1</source>
+                <target>Edytuj dane osobowe</target>
+            </trans-unit>
+
+            <trans-unit id="edit_personal_data_return_link">
+                <source>edit_personal_data_return_link</source>
+                <target>Powrót do moich danych</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_title">
+                <source>change_password_title</source>
+                <target>zmiana hasła</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_h1">
+                <source>change_password_h1</source>
+                <target>Zmień hasło do swojego konta</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_return_link">
+                <source>change_password_return_link</source>
+                <target>Powrót do moich danych</target>
+            </trans-unit>
+
+            <trans-unit id="account_settings_title">
+                <source>account_settings_title</source>
+                <target>ustawienia konta</target>
+            </trans-unit>
+
+            <trans-unit id="account_settings_h1">
+                <source>account_settings_h1</source>
+                <target>Ustawienia Twojego konta</target>
+            </trans-unit>
+
+            <trans-unit id="account_settings_delete_account_link">
+                <source>account_settings_delete_account_link</source>
+                <target>Usuń konto</target>
+            </trans-unit>
+
+            <trans-unit id="account_settings_return_link">
+                <source>account_settings_return_link</source>
+                <target>Powrót do panelu użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="delete_account_title">
+                <source>delete_account_title</source>
+                <target>usuń konto</target>
+            </trans-unit>
+
+            <trans-unit id="delete_account_h1">
+                <source>delete_account_h1</source>
+                <target>Potwierdź usunięcie swojego konta</target>
+            </trans-unit>
+
+            <trans-unit id="delete_account_cancel_link">
+                <source>delete_account_cancel_link</source>
+                <target>Anuluj</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_title">
+                <source>user_list_title</source>
+                <target>lista użytkowników</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_h1">
+                <source>user_list_h1</source>
+                <target>Lista wszystkich użytkowników aplikacji</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_no_users">
+                <source>user_list_no_users</source>
+                <target>Nie ma żadnych użytkowników.</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_li_first_name">
+                <source>user_list_li_first_name</source>
+                <target>Imię</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_li_last_name">
+                <source>user_list_li_last_name</source>
+                <target>Nazwisko</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_li_email">
+                <source>user_list_li_email</source>
+                <target>Adres e-mail</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_li_user_data">
+                <source>user_list_li_user_data</source>
+                <target>Dane użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_li_delete_user">
+                <source>user_list_li_delete_user</source>
+                <target>Usuń użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="user_list_return_link">
+                <source>user_list_return_link</source>
+                <target>Powrót do panelu użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="user_data_title">
+                <source>user_data_title</source>
+                <target>dane użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="user_data_h1">
+                <source>user_data_h1</source>
+                <target>Dane użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="user_data_first_name_label">
+                <source>user_data_first_name_label</source>
+                <target>Imię</target>
+            </trans-unit>
+
+            <trans-unit id="user_data_last_name_label">
+                <source>user_data_last_name_label</source>
+                <target>Nazwisko</target>
+            </trans-unit>
+
+            <trans-unit id="user_data_email_label">
+                <source>user_data_email_label</source>
+                <target>Adres e-mail</target>
+            </trans-unit>
+
+            <trans-unit id="user_data_edit_data_link">
+                <source>user_data_edit_data_link</source>
+                <target>Edytuj dane osobowe</target>
+            </trans-unit>
+
+            <trans-unit id="user_data_change_password_link">
+                <source>user_data_change_password_link</source>
+                <target>Zmień hasło do konta</target>
+            </trans-unit>
+
+            <trans-unit id="user_data_return_link">
+                <source>user_data_return_link</source>
+                <target>Powrót do listy użytkowników</target>
+            </trans-unit>
+
+            <trans-unit id="edit_user_personal_data_title">
+                <source>edit_user_personal_data_title</source>
+                <target>edytuj dane osobowe użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="edit_user_personal_data_h1">
+                <source>edit_user_personal_data_h1</source>
+                <target>Edytuj dane osobowe użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="edit_user_personal_data_return_link">
+                <source>edit_user_personal_data_return_link</source>
+                <target>Powrót do danych użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="change_user_password_title">
+                <source>change_user_password_title</source>
+                <target>zmiana hasła do konta użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="change_user_password_h1">
+                <source>change_user_password_h1</source>
+                <target>Zmień hasło do konta użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="change_user_password_return_link">
+                <source>change_user_password_return_link</source>
+                <target>Powrót do danych użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="delete_user_title">
+                <source>delete_user_title</source>
+                <target>usuń użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="delete_user_h1">
+                <source>delete_user_h1</source>
+                <target>Potwierdź usunięcie użytkownika</target>
+            </trans-unit>
+
+            <trans-unit id="delete_user_cancel_link">
+                <source>delete_user_cancel_link</source>
+                <target>Anuluj</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

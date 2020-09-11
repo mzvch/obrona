@@ -1,0 +1,21 @@
+form.register.label.first_name: First name
+
+form.register.help.first_name: Your first name should be up to 30 characters long.
+
+form.register.label.last_name: Last name
+
+form.register.help.last_name: Your last name should be 50 characters or less.
+
+form.register.label.email: E-mail address
+
+form.register.help.email: The e-mail address should contain a maximum of 50 characters.
+
+form.register.label.password: Password
+
+form.register.help.password: The password should be 15 to 64 characters long.
+
+form.register.label.repeat_password: Repeat password
+
+form.register.label.agree_terms: I accept <a href="#" target="_blank">the website regulations</a>
+
+form.register.label.submit: Register

@@ -1,0 +1,17 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "index_title" | trans }}{% endblock %}
+
+{% block main %}
+    {% if app.user %}
+        <h1 class="h1 text-center mt-5 pb-5">{{ "index_h1_welcome" | trans }}, {{ app.user.firstName }} {{ app.user.lastName }}!</h1>
+    {% endif %}
+
+    <h2 class="h2 text-center mt-5 pb-5">{{ "index_h2" | trans }}</h2>
+
+    <h3 class="h3 text-center mt-5 pt-5">{{ "index_h3" | trans }}</h3>
+{% endblock %}
+
+{% block footer %}
+    {{ include ("_bottom_fixed_footer.html.twig") }}
+{% endblock %}

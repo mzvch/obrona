@@ -1,0 +1,25 @@
+flash_message.registration_success: Gratulacje! Twoje konto zostało utworzone - zacznij z niego korzystać.
+
+flash_message.edit_user_personal_data_success: Dane użytkownika zostały pomyślnie zmienione.
+
+flash_message.edit_change_user_password_success: Hasło użytkownika zostało pomyślnie zmienione.
+
+flash_message.delete_user_success: Użytkownik został pomyślnie usunięty.
+
+flash_message.no_pockets_warning: Aby móc dodawać operacje, musisz najpierw stworzyć portfele.
+
+flash_message.not_enough_money_error: Nie masz wystarczających środków w tym portfelu.
+
+flash_message.add_transaction_success: Nowa operacja została pomyślnie dodana.
+
+flash_message.add_pocket_success: Nowy portfel został pomyślnie dodany.
+
+flash_message.edit_pocket_success: Portfel został pomyślnie zedytowany.
+
+flash_message.delete_pocket_success: Portfel został pomyślnie usunięty.
+
+flash_message.edit_personal_data_success: Twoje dane zostały pomyślnie zmienione.
+
+flash_message.change_password_success: Hasło do Twojego konta zostało pomyślnie zmienione.
+
+flash_message.delete_account_success: Twoje konto zostało pomyślnie usunięte.

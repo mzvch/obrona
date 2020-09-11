@@ -1,0 +1,9 @@
+form.edit_personal_data.label.first_name: First name
+
+form.edit_personal_data.help.first_name: Your first name should be up to 30 characters long.
+
+form.edit_personal_data.label.last_name: Last name
+
+form.edit_personal_data.help.last_name: Your last name should be 50 characters or less.
+
+form.edit_personal_data.label.submit: Change details

@@ -1,0 +1,126 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="user_email_unique">
+                <source>user_email_unique</source>
+                <target>User with the given e-mail address already exists.</target>
+            </trans-unit>
+
+            <trans-unit id="user_first_name_not_blank">
+                <source>user_first_name_not_blank</source>
+                <target>You must enter your first name.</target>
+            </trans-unit>
+
+            <trans-unit id="user_first_name_max_length">
+                <source>user_first_name_max_length</source>
+                <target>Your first name can be up to 30 characters long.</target>
+            </trans-unit>
+
+            <trans-unit id="user_last_name_not_blank">
+                <source>user_last_name_not_blank</source>
+                <target>You must enter your last name.</target>
+            </trans-unit>
+
+            <trans-unit id="user_last_name_max_length">
+                <source>user_last_name_max_length</source>
+                <target>Your last name can be up to 50 characters long.</target>
+            </trans-unit>
+
+            <trans-unit id="user_email_not_blank">
+                <source>user_email_not_blank</source>
+                <target>You must enter your e-mail address.</target>
+            </trans-unit>
+
+            <trans-unit id="user_email_max_length">
+                <source>user_email_max_length</source>
+                <target>Your e-mail address can be up to 50 characters long.</target>
+            </trans-unit>
+
+            <trans-unit id="user_email_format">
+                <source>user_email_format</source>
+                <target>Your email address is not in the correct format.</target>
+            </trans-unit>
+
+            <trans-unit id="user_password_not_same">
+                <source>user_password_not_same</source>
+                <target>The passwords entered must be the same.</target>
+            </trans-unit>
+
+            <trans-unit id="user_password_not_blank">
+                <source>user_password_not_blank</source>
+                <target>You must enter a password for your account.</target>
+            </trans-unit>
+
+            <trans-unit id="user_password_min_length">
+                <source>user_password_min_length</source>
+                <target>Your password must be at least 15 characters long.</target>
+            </trans-unit>
+
+            <trans-unit id="user_password_max_length">
+                <source>user_password_max_length</source>
+                <target>Your password must be 64 characters or less.</target>
+            </trans-unit>
+
+            <trans-unit id="user_agree_terms_is_true">
+                <source>user_agree_terms_is_true</source>
+                <target>You must accept the terms of our website.</target>
+            </trans-unit>
+
+            <trans-unit id="pocket_name_not_blank">
+                <source>pocket_name_not_blank</source>
+                <target>You must enter a pocket name.</target>
+            </trans-unit>
+
+            <trans-unit id="pocket_name_max_length">
+                <source>pocket_name_max_length</source>
+                <target>The pocket name can be up to 30 characters long.</target>
+            </trans-unit>
+
+            <trans-unit id="pocket_account_balance_greater_than_or_equal">
+                <source>pocket_account_balance_greater_than_or_equal</source>
+                <target>The pocket balance cannot be lower than 0 PLN.</target>
+            </trans-unit>
+
+            <trans-unit id="financial_transaction_title_not_blank">
+                <source>financial_transaction_title_not_blank</source>
+                <target>You must provide a title for the transaction.</target>
+            </trans-unit>
+
+            <trans-unit id="financial_transaction_title_max_length">
+                <source>financial_transaction_title_max_length</source>
+                <target>The transaction title can be up to 30 characters long.</target>
+            </trans-unit>
+
+            <trans-unit id="financial_transaction_amount_not_blank">
+                <source>financial_transaction_amount_not_blank</source>
+                <target>You must enter the amount of the transaction.</target>
+            </trans-unit>
+
+            <trans-unit id="financial_transaction_amount_not_equal_to">
+                <source>financial_transaction_amount_not_equal_to</source>
+                <target>The transaction amount cannot be equal to 0 PLN.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_not_same">
+                <source>change_password_not_same</source>
+                <target>The passwords entered must be the same.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_not_blank">
+                <source>change_password_not_blank</source>
+                <target>You must enter a new password for your account.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_min_length">
+                <source>change_password_min_length</source>
+                <target>Your password must be at least 15 characters long.</target>
+            </trans-unit>
+
+            <trans-unit id="change_password_max_length">
+                <source>change_password_max_length</source>
+                <target>Your password must be 64 characters or less.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

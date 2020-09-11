@@ -1,0 +1,25 @@
+flash_message.registration_success: Congratulations! Your account has been created - start using it.
+
+flash_message.edit_user_personal_data_success: User data has been successfully changed.
+
+flash_message.edit_change_user_password_success: User password has been successfully changed.
+
+flash_message.delete_user_success: The user has been successfully deleted.
+
+flash_message.no_pockets_warning: To be able to add transactions, you must first create pockets.
+
+flash_message.not_enough_money_error: You do not have sufficient funds in this pocket.
+
+flash_message.add_transaction_success: The new transaction has been added successfully.
+
+flash_message.add_pocket_success: The new pocket has been successfully added.
+
+flash_message.edit_pocket_success: The pocket has been successfully edited.
+
+flash_message.delete_pocket_success: The pocket has been successfully deleted.
+
+flash_message.edit_personal_data_success: Your details have been successfully changed.
+
+flash_message.change_password_success: Your account password has been successfully changed.
+
+flash_message.delete_account_success: Your account has been successfully deleted.

@@ -1,0 +1,11 @@
+form.pocket.label.name: Nazwa portfela
+
+form.pocket.help.name: Nazwa portfela powinna zawierać maksymalnie 30 znaków.
+
+form.pocket.label.account_balance: Saldo portfela (w PLN)
+
+form.pocket.help.account_balance: Najniższa możliwa wartość salda portfela to 0 PLN.
+
+form.pocket.label.submit: Dodaj portfel
+
+form.pocket.delete.label.submit: Usuń portfel

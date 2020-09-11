@@ -1,0 +1,46 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "user_data_title" | trans }}{% endblock %}
+
+{% block main %}
+    {% for message in app.flashes ("success") %}
+        <div class="alert alert-success w-50 ml-auto mr-auto mt-5" role="alert">{{ message }}</div>
+    {% endfor %}
+
+    <h1 class="h1 text-center mt-4 mb-4 pt-3">{{ "user_data_h1" | trans }} (ID: {{ user.id }})</h1>
+
+    <div class="w-50 mr-auto ml-auto pt-3">
+        <form method="post" novalidate>
+            <div class="mb-4">
+                <label for="first_name">{{ "user_data_first_name_label" | trans }}</label>
+                <input type="text" value="{{ user.firstName }}" id="first_name" class="form-control" readonly/>
+            </div>
+
+            <div class="mb-4">
+                <label for="last_name">{{ "user_data_last_name_label" | trans }}</label>
+                <input type="text" value="{{ user.lastName }}" id="last_name" class="form-control" readonly/>
+            </div>
+
+            <div class="mb-4">
+                <label for="email">{{ "user_data_email_label" | trans }}</label>
+                <input type="email" value="{{ user.email }}" id="email" class="form-control" readonly/>
+            </div>
+        </form>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="{{ url ("admin_edit_user_personal_data", {"id": user.id}) }}">{{ "user_data_edit_data_link" | trans }}</a>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="{{ url ("admin_change_user_password", {"id": user.id}) }}">{{ "user_data_change_password_link" | trans }}</a>
+    </div>
+
+    <div class="text-center mt-4">
+        <a href="{{ url ("admin_user_list") }}">{{ "user_data_return_link" | trans }}</a>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    {{ include ("_bottom_fixed_footer.html.twig") }}
+{% endblock %}

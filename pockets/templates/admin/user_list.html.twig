@@ -1,0 +1,47 @@
+{% extends "base.html.twig" %}
+
+{% block title %}Pockets - {{ "user_list_title" | trans }}{% endblock %}
+
+{% block main %}
+    {% for message in app.flashes ("success") %}
+        <div class="alert alert-success w-50 ml-auto mr-auto mt-5" role="alert">{{ message }}</div>
+    {% endfor %}
+
+    <h1 class="h1 text-center mt-5 mb-5 pt-5">{{ "user_list_h1" | trans }}</h1>
+
+    {% if users | length == 0 %}
+        <p class="text-center pt-5 pb-5">{{ "user_list_no_users" | trans }}</p>
+    {% else %}
+        {% for user in users %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="text-center" style="width: 20%; float: left;">
+                        {{ "user_list_li_first_name" | trans }}: <strong>{{ user.firstName }}</strong>
+                    </div>
+
+                    <div class="text-center" style="width: 20%; float: left;">
+                        {{ "user_list_li_last_name" | trans }}: <strong>{{ user.lastName }}</strong>
+                    </div>
+
+                    <div class="text-center" style="width: 35%; float: left;">
+                        {{ "user_list_li_email" | trans }}: <strong>{{ user.email }}</strong>
+                    </div>
+
+                    <div class="text-center" style="width: 12.5%; float: left;">
+                        <a href="{{ url ("admin_user_data", {"id": user.id}) }}">{{ "user_list_li_user_data" | trans }}</a>
+                    </div>
+
+                    <div class="text-center" style="width: 12.5%; float: left;">
+                        <a href="{{ url ("admin_delete_user", {"id": user.id}) }}">{{ "user_list_li_delete_user" | trans }}</a>
+                    </div>
+
+                    <div style="clear: both;"></div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endif %}
+
+    <div class="text-center mt-5 mb-5">
+        <a href="{{ url ("user_panel") }}">{{ "user_list_return_link" | trans }}</a>
+    </div>
+{% endblock %}
